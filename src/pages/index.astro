@@ -1,37 +1,47 @@
 ---
 import "../styles/global.css";
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { site } from '../data/config.json';
+import {site} from '../data/config.json';
 ---
 
 <BaseLayout>
 
-	<div class="pb-12 mt-5">
-		<div class="text-xl py-1">Hey there ☕️</div>
-		<div class="text-5xl font-bold">I'm Olle Korkmaz Zillén</div>
-		<div class="text-3xl py-3 font-bold">Moka Pot Pro and Espresso Explorer</div>
-		<div class="py-2">
-			<text class="text-lg">
-				This is my wish list for espresso tools and accessories! ☕️
-			</text>
-			<ul class="list-disc pl-5">
-				<li>Espresso machine - <a
-						href="https://amzn.to/4fGwNWx"
-						class="underline hover:no-underline"
-						target="_blank">Gaggia Classic Pro Evo Red
+    <div class="pb-12 mt-5">
+        <div class="text-xl py-1">Hey there ☕️</div>
+        <div class="text-5xl font-bold">I'm Olle Korkmaz Zillén</div>
+        <div class="text-3xl py-3 font-bold">Moka Pot Pro and Espresso Explorer</div>
+        <div class="py-2">
+            <text class="text-lg">
+                This is my wish list for espresso tools and accessories! ☕️
+            </text>
+            <ul class="list-disc pl-5">
+                <li>Espresso machine - <a
+                        href="https://www.gaggia.com/manual-machines/classic-e24-energy-vibes/"
+                        class="underline hover:no-underline"
+                        target="_blank">Gaggia Classic E24
                 </a></li>
-				<li>Grinder - <a
+                <li>Grinder - <a
                         href="https://amzn.to/45BHHJu"
                         class="underline hover:no-underline"
                         target="_blank">
                     Breiville Smart Grinder Pro Blue
                 </a></li>
-				<li>Scale - ??? To be decided</li>
-			</ul>
-		</div>
-		<div class="mt-8 flex items-center space-x-3">
-			<a class="btn btn-lg btn-soft" href={site.blog_url} target="_blank">Read my blog here!</a>
-		</div>
-	</div>
+                <li>Or ... - <a
+                        href="https://www.eureka.co.it/en/products/eureka+1920/mignon+grinders/silent+range/20.aspx"
+                        class="underline hover:no-underline"
+                        target="_blank">
+                    Eureka Mignon Specialita
+                </a></li>
+                <li>Scale - <a
+                        href="https://amzn.to/4phZIEg"
+                        class="underline hover:no-underline"
+                        target="_blank">WACACO Exagram Pro</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mt-8 flex items-center space-x-3">
+            <a class="btn btn-lg btn-soft" href={site.blog_url} target="_blank">Read my blog here!</a>
+        </div>
+    </div>
 
 </BaseLayout>
