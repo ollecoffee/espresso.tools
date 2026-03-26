@@ -6,36 +6,110 @@ import {site} from '../data/config.json';
 
 <BaseLayout>
 
-    <div class="pb-12 mt-5">
-        <div class="text-xl py-1">Hey there ☕️</div>
-        <div class="text-5xl font-bold">I'm Olle Korkmaz Zillén</div>
-        <div class="text-3xl py-3 font-bold">Moka Pot Pro and Espresso Explorer</div>
-        <div class="py-2">
-            <text class="text-lg">
-                This is my wish list for espresso tools and accessories! ☕️
-            </text>
-            <ul class="list-disc pl-5">
-                <li>Espresso machine - <a
-                    href="https://www.sageappliances.com/sv-se/product/bes500?sku=SES500BST4EEU1"
-                    class="underline hover:no-underline"
-                    target="_blank">Sage Bambinbo Plus</a>
-                </li>
-                <li>Grinder - <a
-                        href="https://www.eureka.co.it/en/products/eureka+1920/mignon+grinders/silent+range/121.aspx"
-                        class="underline hover:no-underline"
-                        target="_blank">
-                    Eureka Mignon Specialità Smart
-                </a></li>
-                <li>Scale - <a
-                        href="https://www.wacaco.com/products/exagram-pro"
-                        class="underline hover:no-underline"
-                        target="_blank">WACACO Exagram Pro</a>
-                </li>
-            </ul>
-        </div>
-        <div class="mt-8 flex items-center space-x-3">
-            <a class="btn btn-lg btn-soft" href={site.blog_url} target="_blank">Read my blog here!</a>
-        </div>
-    </div>
+	<!-- hero -->
+	<div class="pb-16 mt-5">
+		<div class="text-lg opacity-70 py-1">Hey there ☕️</div>
+		<div class="text-5xl font-bold leading-tight">My espresso wishlist.</div>
+		<div class="text-xl py-4 max-w-150 opacity-80">
+			I'm Olle. I make software and drink too much espresso.
+			This is the stuff I want for my home setup.
+		</div>
+		<div class="mt-4 flex flex-wrap gap-3">
+			<a class="btn btn-primary" href="#gear">The gear</a>
+			<a class="btn btn-soft" href={site.blog_url} target="_blank">My blog</a>
+		</div>
+	</div>
+
+	<!-- Why espresso -->
+	<section id="why" class="pb-16">
+		<h2 class="text-3xl font-bold pb-4">Why espresso at home</h2>
+		<p class="text-lg opacity-80 max-w-150">
+			Dialing in a shot is half the fun. Grind size, dose, timing.
+			When you get it right it's better than anything you'll get at a café. I want a setup that lets me do that every morning.
+		</p>
+	</section>
+
+	<!-- Gear -->
+	<section id="gear" class="pb-16">
+		<h2 class="text-3xl font-bold pb-6">Gear</h2>
+		<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+			<!-- Machine -->
+			<div class="card bg-base-200 shadow-sm">
+				<div class="card-body">
+					<div class="badge badge-outline mb-2">Machine</div>
+					<h3 class="card-title">Sage Bambino Plus</h3>
+					<p class="opacity-70 text-sm">
+						Small, heats up in 3 seconds, does milk automatically.
+						Good enough to learn on without spending a fortune.
+					</p>
+					<div class="card-actions justify-end mt-4">
+						<a
+							href="https://www.sageappliances.com/sv-se/product/bes500?sku=SES500BST4EEU1"
+							class="btn btn-sm btn-primary"
+							target="_blank"
+						>Check price</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Grinder -->
+			<div class="card bg-base-200 shadow-sm">
+				<div class="card-body">
+					<div class="badge badge-outline mb-2">Grinder</div>
+					<h3 class="card-title">Eureka Mignon Specialità</h3>
+					<p class="opacity-70 text-sm">
+						55mm flat burrs, stepless adjustment, and actually quiet.
+						Won't wake up the whole apartment at 6am.
+					</p>
+					<div class="card-actions justify-end mt-4">
+						<a
+							href="https://www.eureka.co.it/en/products/eureka+1920/mignon+grinders/silent+range/121.aspx"
+							class="btn btn-sm btn-primary"
+							target="_blank"
+						>Check price</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Scale -->
+			<div class="card bg-base-200 shadow-sm">
+				<div class="card-body">
+					<div class="badge badge-outline mb-2">Scale</div>
+					<h3 class="card-title">WACACO Exagram Pro</h3>
+					<p class="opacity-70 text-sm">
+						0.1g precision, built-in timer, fits under a portafilter.
+						Nothing fancy, just does the job.
+					</p>
+					<div class="card-actions justify-end mt-4">
+						<a
+							href="https://www.wacaco.com/products/exagram-pro"
+							class="btn btn-sm btn-primary"
+							target="_blank"
+						>Check price</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- On beans -->
+	<section id="beans" class="pb-16">
+		<h2 class="text-3xl font-bold pb-4">On beans</h2>
+		<p class="text-lg opacity-80 max-w-150">
+			The grinder and machine don't matter if the beans are stale.
+			Buy fresh, buy local, go medium to medium-dark for espresso. That's about it.
+		</p>
+	</section>
+
+	<!-- Closing -->
+	<section id="closing" class="pb-16">
+		<h2 class="text-3xl font-bold pb-4">That's about it</h2>
+		<p class="text-lg opacity-80 max-w-150">
+			Working on this setup one piece at a time.
+			More coffee stuff on <a href={site.blog_url} target="_blank" class="link link-primary">my blog</a>.
+		</p>
+	</section>
 
 </BaseLayout>

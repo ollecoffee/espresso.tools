@@ -10,9 +10,13 @@ import ThemeSelect from './ThemeSelect.astro';
 >
 	<div class="navbar">
         <div class="navbar-start">
+			<a class="btn btn-ghost normal-case text-lg" href="/">espresso.tools ☕️</a>
         </div>
-		<div class="navbar-center">
-			<a class="btn btn-ghost normal-case text-xl lg:hidden" href="/">Olle Korkmaz Zillén ☕️️</a>
+		<div class="navbar-center hidden md:flex">
+			<ul class="menu menu-horizontal px-1 gap-1">
+				<li><a href="#gear">Gear</a></li>
+				<li><a href="#beans">Beans</a></li>
+			</ul>
 		</div>
 		<div class="navbar-end">
 			{<ThemeSelect/>}
