@@ -6,87 +6,69 @@ import {site} from '../data/config.json';
 
 <BaseLayout>
 
-	<!-- hero -->
 	<div class="pb-16 mt-5">
-		<div class="text-lg opacity-70 py-1">Hey there ☕️</div>
-		<div class="text-5xl font-bold leading-tight">My espresso wishlist.</div>
+		<div class="text-lg opacity-70 py-1">espresso.tools</div>
+		<div class="text-5xl font-bold leading-tight">my home espresso setup</div>
 		<div class="text-xl py-4 max-w-150 opacity-80">
-			I'm Olle. I make software and drink too much espresso.
-			This is the stuff I want for my home setup.
+			i make software and drink too much espresso. here's what i use and what i want next.
 		</div>
 		<div class="mt-4 flex flex-wrap gap-3">
-			<a class="btn btn-primary" href="#gear">The gear</a>
-			<a class="btn btn-soft" href={site.blog_url} target="_blank">My blog</a>
+			<a class="btn btn-primary" href="#gear">gear</a>
+			<a class="btn btn-soft" href="#wishlist">wishlist</a>
 		</div>
 	</div>
 
-	<!-- Why espresso -->
-	<section id="why" class="pb-16">
-		<h2 class="text-3xl font-bold pb-4">Why espresso at home</h2>
-		<p class="text-lg opacity-80 max-w-150">
-			Dialing in a shot is half the fun. Grind size, dose, timing.
-			When you get it right it's better than anything you'll get at a café. I want a setup that lets me do that every morning.
-		</p>
-	</section>
-
-	<!-- Gear -->
 	<section id="gear" class="pb-16">
-		<h2 class="text-3xl font-bold pb-6">Gear</h2>
+		<h2 class="text-3xl font-bold pb-6">what i use</h2>
 		<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
-			<!-- Machine -->
 			<div class="card bg-base-200 shadow-sm">
 				<div class="card-body">
 					<div class="badge badge-outline mb-2">Machine</div>
 					<h3 class="card-title">Sage Bambino Plus</h3>
 					<p class="opacity-70 text-sm">
-						Small, heats up in 3 seconds, does milk automatically.
-						Good enough to learn on without spending a fortune.
+						small, heats up in 3 seconds, auto milk. good to learn on without going broke.
 					</p>
 					<div class="card-actions justify-end mt-4">
 						<a
 							href="https://www.sageappliances.com/sv-se/product/bes500?sku=SES500BST4EEU1"
 							class="btn btn-sm btn-primary"
 							target="_blank"
-						>Check price</a>
+						>check price</a>
 					</div>
 				</div>
 			</div>
 
-			<!-- Grinder -->
 			<div class="card bg-base-200 shadow-sm">
 				<div class="card-body">
 					<div class="badge badge-outline mb-2">Grinder</div>
-					<h3 class="card-title">Eureka Mignon Specialità</h3>
+					<h3 class="card-title">Eureka Mignon Smart</h3>
 					<p class="opacity-70 text-sm">
-						55mm flat burrs, stepless adjustment, and actually quiet.
-						Won't wake up the whole apartment at 6am.
+						50mm flat burrs, stepless, quiet. does the job well for the price.
 					</p>
 					<div class="card-actions justify-end mt-4">
 						<a
 							href="https://www.eureka.co.it/en/products/eureka+1920/mignon+grinders/silent+range/121.aspx"
 							class="btn btn-sm btn-primary"
 							target="_blank"
-						>Check price</a>
+						>check price</a>
 					</div>
 				</div>
 			</div>
 
-			<!-- Scale -->
 			<div class="card bg-base-200 shadow-sm">
 				<div class="card-body">
 					<div class="badge badge-outline mb-2">Scale</div>
 					<h3 class="card-title">WACACO Exagram Pro</h3>
 					<p class="opacity-70 text-sm">
-						0.1g precision, built-in timer, fits under a portafilter.
-						Nothing fancy, just does the job.
+						0.1g precision, built in timer, fits under a portafilter. nothing fancy.
 					</p>
 					<div class="card-actions justify-end mt-4">
 						<a
 							href="https://www.wacaco.com/products/exagram-pro"
 							class="btn btn-sm btn-primary"
 							target="_blank"
-						>Check price</a>
+						>check price</a>
 					</div>
 				</div>
 			</div>
@@ -94,21 +76,57 @@ import {site} from '../data/config.json';
 		</div>
 	</section>
 
-	<!-- On beans -->
+	<section id="wishlist" class="pb-16">
+		<h2 class="text-3xl font-bold pb-6">what i want next</h2>
+		<div class="grid gap-6 sm:grid-cols-2">
+
+			<div class="card bg-base-200 shadow-sm border border-primary/20">
+				<div class="card-body">
+					<div class="badge badge-primary mb-2">Dream machine</div>
+					<h3 class="card-title">La Marzocco Linea Micra</h3>
+					<p class="opacity-70 text-sm">
+						dual boiler, pro level, tiny footprint. can't decide between yellow and red.
+					</p>
+					<div class="card-actions justify-end mt-4">
+						<a
+							href="https://home.lamarzocco.com/en/linea-micra/"
+							class="btn btn-sm btn-outline btn-primary"
+							target="_blank"
+						>check price</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card bg-base-200 shadow-sm border border-primary/20">
+				<div class="card-body">
+					<div class="badge badge-primary mb-2">Dream grinder</div>
+					<h3 class="card-title">Niche Zero</h3>
+					<p class="opacity-70 text-sm">
+						single dose, zero retention, grinds straight into the portafilter.
+					</p>
+					<div class="card-actions justify-end mt-4">
+						<a
+							href="https://www.nichecoffee.co.uk/products/niche-zero"
+							class="btn btn-sm btn-outline btn-primary"
+							target="_blank"
+						>check price</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
 	<section id="beans" class="pb-16">
-		<h2 class="text-3xl font-bold pb-4">On beans</h2>
+		<h2 class="text-3xl font-bold pb-4">beans</h2>
 		<p class="text-lg opacity-80 max-w-150">
-			The grinder and machine don't matter if the beans are stale.
-			Buy fresh, buy local, go medium to medium-dark for espresso. That's about it.
+			none of the gear matters if the beans are stale. buy fresh, buy local, medium to medium dark for espresso.
 		</p>
 	</section>
 
-	<!-- Closing -->
-	<section id="closing" class="pb-16">
-		<h2 class="text-3xl font-bold pb-4">That's about it</h2>
+	<section class="pb-16">
 		<p class="text-lg opacity-80 max-w-150">
-			Working on this setup one piece at a time.
-			More coffee stuff on <a href={site.blog_url} target="_blank" class="link link-primary">my blog</a>.
+			more coffee stuff on <a href={site.blog_url} target="_blank" class="link link-primary">my blog</a>.
 		</p>
 	</section>
 
